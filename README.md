@@ -1,3 +1,10 @@
+### This is a Example Node API Application
+This project has a Hello World API
+
+### Changelog
+- Removed View Layer
+- Added Versioned API
+
 ### Node Express template project
 
 This project is based on a GitLab [Project Template](https://docs.gitlab.com/ee/gitlab-basics/create-project.html).
