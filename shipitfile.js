@@ -9,7 +9,18 @@ module.exports = shipit => {
       repositoryUrl: 'https://gitlab.com/aniketrao21/example-api.git',
     },
     production: {
-      servers: 'root@192.168.33.10',
+      servers: 'vagrant@192.168.33.10',
     },
   })
+
+  shipit.on('deployed', () => {
+    const env = shipit.environment;
+
+    let cmd = '';
+    cmd += `cd ${shipit.releasePath} && `;
+    cmd += 'npm install --production && ';
+    cmd += `(sudo service exampleapi restart)`;
+
+    shipit.remote(cmd);
+});
 }
