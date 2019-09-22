@@ -7,13 +7,18 @@
     "test": "mocha"
   },
   "dependencies": {
+    "appmetrics-statsd": "^3.0.0",
     "body-parser": "^1.19.0",
     "debug": "~2.6.9",
     "express": "~4.16.0",
-    "morgan": "^1.9.1"
+    "express-statsd": "^0.3.0",
+    "morgan": "^1.9.1",
+    "statsd-client": "^0.4.2"
   },
   "devDependencies": {
     "mocha": "^5.1.1",
+    "shipit-cli": "^5.1.0",
+    "shipit-deploy": "^5.1.0",
     "supertest": "^3.0.0"
   }
 }
